@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michelle Wheatcraft Photography</title>
+<meta name="description" content="Michelle Wheatcraft Photography — birds, wild places, and the night sky.">
+<link rel="icon" href="data:,">
+<style>
+  :root{
+    --bg:#0a0a0b; --ink:#f2f0ed; --dim:#8b8b91; --line:#26262a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    display:flex; flex-direction:column;
+  }
+  .wrap{max-width:1180px;width:100%;margin:0 auto;padding:48px 28px 40px;flex:1;display:flex;flex-direction:column}
+  header{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid var(--line)}
+  .mark{font-size:1.02rem;letter-spacing:.01em}
+  .mark span{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--dim);display:block;margin-top:7px}
+  .eta{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--dim)}
+  main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:44px 0 30px}
+  figure{margin:0}
+  /* The photograph is shown at its true aspect ratio. It is never cropped. */
+  figure img{display:block;width:100%;height:auto}
+  figcaption{
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);
+    margin-top:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap
+  }
+  h1{font-weight:400;font-size:clamp(1.9rem,5.2vw,3.1rem);line-height:1.08;letter-spacing:-.015em;margin:40px 0 0;max-width:20ch}
+  p.note{font-size:1rem;line-height:1.65;color:var(--dim);max-width:52ch;margin:20px 0 0}
+  footer{padding-top:26px;border-top:1px solid var(--line);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  @media (max-width:640px){ .wrap{padding:32px 20px 30px} h1{margin-top:32px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">Michelle Wheatcraft<span>Photography</span></div>
+    <div class="eta">New site in progress</div>
+  </header>
+
+  <main>
+    <figure>
+      <img src="img/valley-final-copy_db03bee9-2048.jpg"
+           srcset="img/valley-final-copy_db03bee9-1440.jpg 1440w,
+                   img/valley-final-copy_db03bee9-2048.jpg 2048w"
+           sizes="(max-width:1180px) 100vw, 1124px"
+           width="2048" height="1364"
+           alt="The Milky Way over a butte in Monument Valley at night.">
+      <figcaption>
+        <span>Monument Valley</span>
+        <span>Nikon Z 6 II &middot; 20mm f/2.5 &middot; 13s &middot; ISO 3200</span>
+      </figcaption>
+    </figure>
+
+    <h1>Birds, wild places, and the night sky.</h1>
+    <p class="note">A new home for the work is being built. The photographs are on their way.</p>
+  </main>
+
+  <footer>
+    <span>Michelle Wheatcraft Photography</span>
+    <span>&copy; Michelle Wheatcraft</span>
+  </footer>
+</div>
+</body>
+</html>
